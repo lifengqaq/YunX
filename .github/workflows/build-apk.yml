@@ -6,7 +6,7 @@
 #   - debug：用仓库内 debug.keystore 签名，无需任何 Secrets，适合装机联调；
 #   - release：R8 混淆 + 资源压缩，体积小，用于尝鲜与覆盖安装验证。
 # 签名：Release 包复用 Eta-por 项目同一张正式证书的 Secrets
-# （KEYSTORE_BASE64 / KEYSTORE_PASSWORD / KEY_ALIAS / KEY_PASSWORD，别名 eta），
+# （KEYSTORE_BASE64 / KEYSTORE_PASSWORD / KEY_ALIAS / KEY_PASSWORD，别名 yunx），
 # 与正式版同签名 ⇒ 测试包可直接覆盖安装升级；本地构建没有这些变量时，
 # app/build.gradle.kts 会把 release 变体置为未签名（app-release-unsigned.apk）。
 name: Nightly Build APK
